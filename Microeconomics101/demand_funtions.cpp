@@ -53,7 +53,7 @@ void find_demand_function_cd()
 void find_demand_function_c()
 {
 	double a, b, pX, pY, m;
-	std::cout << "You chose Cobbe-Douglas function.\n" << "Please provide factor at X\n";
+	std::cout << "You chose perfectly complementary function.\n" << "Please provide factor at X\n";
 	std::cin >> a;
 	std::cout << "Please provide factor at Y\n";
 	std::cin >> b;
@@ -70,7 +70,7 @@ void find_demand_function_c()
 void find_demand_function_s()
 {
 	double a, b, pX, pY, m;
-	std::cout << "You chose Cobbe-Douglas function.\n" << "Please provide factor at X\n";
+	std::cout << "You chose perfectly suplementary function.\n" << "Please provide factor at X\n";
 	std::cin >> a;
 	std::cout << "Please provide factor at Y\n";
 	std::cin >> b;

@@ -141,11 +141,15 @@
   <ItemGroup>
     <ClCompile Include="common.cpp" />
     <ClCompile Include="demand_funtions.cpp" />
+    <ClCompile Include="income_offer_curve.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="price_offer_curve.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common.h" />
     <ClInclude Include="demand_funtions.h" />
+    <ClInclude Include="income_offer_curve.h" />
+    <ClInclude Include="price_offer_curve.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

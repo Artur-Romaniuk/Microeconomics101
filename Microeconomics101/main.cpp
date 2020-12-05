@@ -1,8 +1,11 @@
 #include <iostream>
 #include <string>
 
-#include "demand_funtions.h"
 #include "common.h"
+#include "demand_funtions.h"
+#include "price_offer_curve.h"
+#include "income_offer_curve.h"
+
 
 
 
@@ -20,6 +23,12 @@ int main()
 			ClearScreen();
 			find_demand_function();
 			break;
+		case 'p':
+			ClearScreen();
+			find_price_offer_curve();
+		case 'i':
+			ClearScreen();
+			find_income_offer_curve();
 		}
 		if (user_input == 'q')
 		{
@@ -27,5 +36,6 @@ int main()
 		}
 	}
 
+	return 0;
 }
 
