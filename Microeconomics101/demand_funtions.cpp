@@ -1,38 +1,5 @@
-#include <iostream>
-#include <string>
+#include "demand_funtions.h"
 
-void ClearScreen();
-void find_demand_function();
-void find_demand_function_cd();
-void find_demand_function_c();
-void find_demand_function_s();
-
-int main()
-{
-	char user_input;
-	while (true)
-	{
-		std::cout << "Choose what do you want to do.\n" << "List of options:\n" << "d - find demand function\n" << "p - price offer curve\n" << "i - income offer curve\n" << "e - Engel curve\n" << "q - to exit the program\n";
-		std::cin >> user_input;
-		switch (user_input)
-		{
-		case 'd':
-			ClearScreen();
-			find_demand_function();
-			break;
-		}
-		if (user_input == 'q')
-		{
-			break;
-		}
-	}
-
-}
-
-void ClearScreen()
-{
-	std::cout << std::string(100, '\n');
-}
 
 void find_demand_function()
 {
@@ -56,12 +23,12 @@ void find_demand_function()
 			find_demand_function_s();
 			break;
 		}
+		std::cout << std::endl;
 		if (user_input == 'q')
 		{
 			ClearScreen();
 			break;
 		}
-			
 			
 	}
 }
@@ -69,7 +36,7 @@ void find_demand_function()
 void find_demand_function_cd()
 {
 	double pwX, pwY, pX, pY, m;
-	std::cout << "You chose Cobbe-Douglas function.\n"<<"Please provide power of X\n";
+	std::cout << "You chose Cobbe-Douglas function.\n" << "Please provide power of X\n";
 	std::cin >> pwX;
 	std::cout << "Please provide power of Y\n";
 	std::cin >> pwY;
@@ -96,7 +63,7 @@ void find_demand_function_c()
 	std::cin >> pY;
 	std::cout << "Please provide budget\n";
 	std::cin >> m;
-	std::cout << "Demand for X: " << m/(pX+(a*pY/b)) << std::endl;
+	std::cout << "Demand for X: " << m / (pX + (a * pY / b)) << std::endl;
 	std::cout << "Demand for Y: " << m / (pY + (b * pX / a)) << std::endl;
 }
 
@@ -121,7 +88,7 @@ void find_demand_function_s()
 	else if ((a / pX) < (b / pY))
 	{
 		std::cout << "Demand for X: 0" << std::endl;
-		std::cout << "Demand for Y: 0" << m/pY << std::endl;
+		std::cout << "Demand for Y: 0" << m / pY << std::endl;
 	}
 	else
 	{
