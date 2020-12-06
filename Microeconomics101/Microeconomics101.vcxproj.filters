@@ -30,6 +30,9 @@
     <ClCompile Include="income_offer_curve.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="engel_curve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="demand_funtions.h">
@@ -42,6 +45,9 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="income_offer_curve.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="engel_curve.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -5,6 +5,7 @@
 #include "demand_funtions.h"
 #include "price_offer_curve.h"
 #include "income_offer_curve.h"
+#include "engel_curve.h"
 
 
 
@@ -29,6 +30,9 @@ int main()
 		case 'i':
 			ClearScreen();
 			find_income_offer_curve();
+		case 'e':
+			ClearScreen();
+			find_engel_curve();
 		}
 		if (user_input == 'q')
 		{
